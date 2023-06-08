@@ -1,7 +1,7 @@
 body {
-    background: rgb(1, 7, 15);
-    color: rgb(7, 88, 4);
-    padding: 10px;
+    background: rgb(0, 159, 13);
+    color: rgb(29, 243, 22);
+    padding: 30px;
     font-family: arial;
 }
 #all-contents {
@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: #1b0cf0;
+    background: #86f158;
    margin: 0 auto;
    margin-bottom: 20px;
     display: flex;
@@ -55,7 +55,7 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px rgb(4, 88, 22) ridge;
+    border: 4px rgb(56, 143, 75) ridge;
     padding: 8px;
 }
 h2, h3 {
