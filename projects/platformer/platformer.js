@@ -30,14 +30,14 @@ $(function () {
      */
 
     // Loop to create vertical grid lines
-    for (let i = 100; i < canvas.width; i += 100) {
-      createPlatform(i, 0, 1, canvas.height);
-    }
+    //  for (let i = 100; i < canvas.width; i += 100) {
+    //    createPlatform(i, 0, 1, canvas.height);
+    // }
 
     // Loop to create horizontal gride lines
-    for (let i = 100; i < canvas.height; i += 100) {
-      createPlatform(0, i, canvas.width, 1);
-    }
+    // for (let i = 100; i < canvas.height; i += 100) {
+    //   createPlatform(0, i, canvas.width, 1);
+    // }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -48,23 +48,33 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
     createPlatform(500, 600, 300, 15); // 
-    createPlatform(600, 300, 200, 20); // 
+    createPlatform(600, 300, 200, 20); //
     createPlatform(900, 400,300,15  );//
-    createPlatform(800, 700,100,15  );//    
-    createPlatform(800, 150, 100, 15); //
-createPlatform(300,500,300,10);//
-    
+   createPlatform(10,700,100,150);//
+   createPlatform(300,500,300,10);//
+   createPlatform(300,600,300,15);//
+   createPlatform(700,500,300,10);//
+
+
+
+
+
+   
+
+
+
+
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
     createCollectable("steve", 700, 90, 6, 1.0);
-    createCollectable("grace", 900, 90,);
-    createCollectable("max",500,90)
-    createCollectable("database",500, 90)
-    createCollectable("kennedi" ,600,90)
-
+    createCollectable("grace", 900, 90,6,1.0);//
+    createCollectable("max",500,90,6,1.0);//
+    createCollectable("database",500, 90,6,1.0);//
+    createCollectable("kennedi" ,600,90,6,1.0);//
+    createCollectable("database",700, 90,6,1.0);//
 
     // TODO 3
     // Create cannons
@@ -72,7 +82,8 @@ createPlatform(300,500,300,10);//
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
     createCannon("right", 100, 200); //
-    
+    createCannon("left", 300, 1200);;//
+    createCannon("bottom",1000,1200);//
     
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
