@@ -24,6 +24,7 @@ var init = function (window) {
         var circles = [];
 
         // TODO 2 : Create a function that draws a circle 
+        
         circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
 physikz.addRandomVelocity(circle, canvas);
 view.addChild(circle);
@@ -45,8 +46,6 @@ circles.push(circle);
         function update() {
             // TODO 4 : Update the circle's position //
             function update() {
-                // TODO 4 : Update the circle's position //
-              
                 physikz.updatePosition(/* Your Bracket Notation HERE */);
                 physikz.updatePosition(/* Your Bracket Notation HERE */);
                 physikz.updatePosition(/* Your Bracket Notation HERE */);
