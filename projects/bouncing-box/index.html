@@ -68,9 +68,9 @@
 
 			// TODO 2 - Variable declarations 
 			/*declare postionX*/
-			var positionX = 0;
+			var positionX = 11;
 			var points = 0;
-			var speed = 10;
+			var speed = 11;
 
 
 
@@ -82,7 +82,7 @@
 
 			function update() {
 				//increase position x by 10 
-				positionX = positionX + 130
+				positionX = positionX + 4
 				moveBoxTo(positionX);
 				if (positionX > boardWidth) {
 					speed = -speed
@@ -108,10 +108,10 @@
 					subtract 3 from speed 
 					{ */
 				if (speed < 0) {
-					speed = speed + 130
+					speed = speed + 11
 				};
 				if (speed > 0) {
-					speed = speed + 130
+					speed = speed + 11
 				};
 			}
 		})();
