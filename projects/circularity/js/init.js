@@ -24,12 +24,12 @@ var init = function (window) {
         var circles = [];
 
         // TODO 2 : Create a function that draws a circle 
-        
-        circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
-physikz.addRandomVelocity(circle, canvas);
-view.addChild(circle);
-circles.push(circle); 
- 
+        function drawCircle() {
+            circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
+            physikz.addRandomVelocity(circle, canvas);,view.addChild(circle);
+            circles.push(circle);
+        }
+
         // TODO 3 / 7 : Call the drawCircle() function 
         drawCircle();
         drawCircle();
@@ -70,7 +70,7 @@ for (var i = 0; i < 100; i++) {
             // TODO 9 : Iterate over the array
            for (var i = 0; i < circles.length; i++){
             physikz.updatePostion(circle[i])
-            games.checkCirclePosition(circles[i])
+            game.checkCirclePosition(circles[i])
            }
             
         }
